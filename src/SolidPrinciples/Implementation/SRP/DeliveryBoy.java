@@ -1,4 +1,4 @@
-package SolidPrinciples.Implementation;
+package SolidPrinciples.Implementation.SRP;
 
 public class DeliveryBoy {
     public void deliverPizza() {
