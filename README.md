@@ -33,10 +33,10 @@ SystemDesign/
 ├── README.md
 │
 ├── SystemDesignFundamentals/
-│   ├── Notes
-│   ├── Diagrams
-│   ├── Examples
-│   └── Implementations
+│   ├── Notes/
+│   ├── Diagrams/
+│   ├── Examples/
+│   └── Implementations/
 │
 └── src/
     └── LibraryManagementSystem/
@@ -76,6 +76,30 @@ A Java implementation demonstrating fundamental Object-Oriented Design concepts.
 
 ---
 
+# 📚 Topics Learned
+
+## ✅ System Design Fundamentals
+
+- What is System Design?
+- Functional vs Non-Functional Requirements
+- Object-Oriented Analysis (OOA)
+- Object-Oriented Design (OOD)
+- Relationship Modeling
+  - Association
+  - Aggregation
+  - Composition
+  - Inheritance
+- IS-A vs HAS-A Relationships
+- Requirement Analysis
+- Responsibility Assignment
+
+## ✅ SOLID Principles
+
+- Single Responsibility Principle (SRP)
+- Open/Closed Principle (OCP)
+
+---
+
 # 🛠 Tech Stack
 
 - Java
@@ -88,9 +112,16 @@ A Java implementation demonstrating fundamental Object-Oriented Design concepts.
 # 📅 Learning Roadmap
 
 - [x] System Design Basics
-- [x] Object-Oriented Design Fundamentals
-- [x] Library Management System
-- [ ] SOLID Principles
+- [x] Requirement Gathering
+- [x] Object-Oriented Analysis (OOA)
+- [x] Object-Oriented Design (OOD)
+- [x] Association, Aggregation & Composition
+- [x] Inheritance & Composition
+- [x] Single Responsibility Principle (SRP)
+- [x] Open/Closed Principle (OCP)
+- [ ] Liskov Substitution Principle (LSP)
+- [ ] Interface Segregation Principle (ISP)
+- [ ] Dependency Inversion Principle (DIP)
 - [ ] Design Patterns
 - [ ] Parking Lot System
 - [ ] Movie Ticket Booking System
@@ -111,12 +142,13 @@ A Java implementation demonstrating fundamental Object-Oriented Design concepts.
 This repository will gradually evolve into a complete System Design handbook containing:
 
 - 📝 Detailed Notes
-- 🎨 Architecture Diagrams
+- 🎨 UML & Architecture Diagrams
 - 💻 Java Implementations
 - 📚 Low-Level Design Problems
 - 🌐 High-Level Design Case Studies
 - 📦 Scalable Architecture Examples
 - 🧩 Design Pattern Implementations
+- 🚀 Production-ready Design Exercises
 
 ---
 
