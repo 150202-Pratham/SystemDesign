@@ -1,0 +1,36 @@
+What is Solid Principles ?
+
+-> Helps developers to break down complex problems into smaller manageable pieces.
+-> Helps developers to reduce the dependencies on code so that in the future if any
+    one area of the code changes, it won’t impact the other area of the code.
+-> Helps developers to move tightly coupled code or components into a loosely coupled,
+    flexible, and maintainable manner.
+
+
+                             Open Closed Principle
+                                    |   Interface Segregation Principle
+                                    |   |
+                      BreakDown ( S O L I D )
+                                  |    |  |
+                                  |    |  |
+                                 SRP   |  |
+     (Single Responsibility Principle) |  Dependency Inversion Principle
+                                       |
+                          (Liskov Substitution Principle)
+
+
+
+
+ -> SRP ( Single Responsibility Principle )  :->
+As the name suggests, the Single Responsibility principle states 2 key principles.
+
+        -> Your class or method should have only one reason to change.
+        -> Your class or method should have only one responsibility to take care of.
+        While you design your logic in either class or method, you should not be writing all kinds of responsibilities
+        in one place. This will make your code quite complex and unmanageable. It will also be difficult to adjust
+        new changes later as there are high chances it will affect the other functionality and you will end up
+        testing all the functionalities even though it is a smaller change. Let’s take the example below.
+
+     What it is Responsible For ?
+     It improves maintainability, readability, testing, debugging, and makes changes localized without
+     affecting unrelated parts of the system.
