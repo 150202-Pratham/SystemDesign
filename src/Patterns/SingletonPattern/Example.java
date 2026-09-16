@@ -10,6 +10,9 @@ public class Example {
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());
 
+        System.out.println(Jalebi.getJalebi().hashCode());
+        System.out.println(Jalebi.getJalebi().hashCode());
+
 //        You Will get same hashCode because We have made the Implementation of Singleton Pattern
 //        Saying the Class can have Only 1 Single Object to interact with
 
