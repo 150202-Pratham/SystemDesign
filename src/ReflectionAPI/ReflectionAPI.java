@@ -67,14 +67,14 @@ public class ReflectionAPI {
         Student s1 = Student.getStudent();
         System.out.println(s1.hashCode());
 
-
-
         Constructor<?> constructor = c.getDeclaredConstructor() ;
 //      converting illegal or private constructor to public
         constructor.setAccessible(true);
 
-        Object s2 = constructor.newInstance() ;
-        System.out.println(s2.hashCode());
+        Student s2 = (Student) constructor.newInstance() ;
+        Student s3 = s2.getStudent();
+
+        System.out.println(s3.hashCode());
 
 
         /*
@@ -83,5 +83,14 @@ public class ReflectionAPI {
         *
         *
         * */
+
+
+       /*
+       *
+       * Resolve a Problem Through this Reflexion APi :
+       * -> If you pass a Condition Inside the Constructor to Check if Samosa is Already Allocated then no need to Call
+       * -> Use Enums To get More Clarity Out there
+       *
+       * */
     }
 }
