@@ -5,7 +5,12 @@ public class Samosa {
     private static Samosa bowl ;
 
 //    Constructor
-    private Samosa(){}
+    private Samosa(){
+        if(bowl!=null){
+            throw new RuntimeException("You are trying to Break Singleton Pattern");
+
+        }
+    }
 
 
 //    Now the Issue is this method is not thread safe like if two threads will come and make a call to the method
@@ -52,6 +57,7 @@ public class Samosa {
         return bowl ;
 
     }
+
 
 }
 
