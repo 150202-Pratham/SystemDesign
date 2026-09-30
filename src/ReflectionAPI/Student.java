@@ -7,6 +7,11 @@ public class Student {
     private String name ;
     public int value = 0 ;
     private Student(){
+//        if(bowl !=null){
+//            throw new RuntimeException("You are trying to Break the Singleton Pattern") ;
+//
+//        }
+
 
         System.out.println("Hello I am Private Constructor of Student Class");
     }
