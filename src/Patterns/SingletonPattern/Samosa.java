@@ -1,6 +1,8 @@
 package Patterns.SingletonPattern;
 
-public class Samosa {
+import java.io.Serializable;
+
+public class Samosa implements Serializable {
 
     private static Samosa bowl ;
 
