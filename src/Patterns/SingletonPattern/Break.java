@@ -1,5 +1,6 @@
 package Patterns.SingletonPattern;
 
+import java.io.*;
 import java.lang.reflect.Constructor;
 
 public class Break {
@@ -12,8 +13,11 @@ public class Break {
         *  Method 1:- Using Reflexion Api -> This api allows you to run, inspect and interact with classes, methods
         *  fields, constructors, and objects at run time even when we don't know the exact details at Compile time
         *
-        *  In short story it allows you to change the nature of clases, fields, constructors at run time not at compile
+        *  In short story it allows you to change the nature of classes, fields, constructors at run time not at compile
         *  time;
+        *
+        *  Method 2:- Using Serialization deserialization to break the Singleton Behaviour
+        *
         *
         * */
 
@@ -23,15 +27,15 @@ public class Break {
 
 //        Break the Singleton Pattern
 //      Using Reflexion Api
-        Class<?> s = Samosa.class;
+        /*Class<?> s = Samosa.class;
         Constructor<?> c = s.getDeclaredConstructor() ;
         c.setAccessible(true) ;
-        Samosa s2= (Samosa) c.newInstance() ;
+        Samosa s2= (Samosa) c.newInstance() ;*/
 //      Private Constructors ka Access Allow
-        System.out.println(s2.hashCode());
+        /*System.out.println(s2.hashCode());
 
         Samosa s3 = Samosa.getSamosa() ;
-       System.out.println(s3.hashCode());
+       System.out.println(s3.hashCode());*/
 
 //       How to Stop Using Reflexion Api
         /*
@@ -39,6 +43,17 @@ public class Break {
         *  2) Then Use Enums ;
         * */
 
+
+        FileOutputStream  fo = new FileOutputStream("SingetonStore.op") ;
+        ObjectOutputStream oo = new ObjectOutputStream(fo) ;
+
+        oo.writeObject(s1) ;
+        oo.close();
+        fo.close() ;
+
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("SingetonStore.op") ) ;
+        Samosa s2 = (Samosa) ois.readObject() ;
+        System.out.println(s2.hashCode());
 
 
     }
