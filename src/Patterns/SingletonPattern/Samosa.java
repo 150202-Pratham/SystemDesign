@@ -2,7 +2,7 @@ package Patterns.SingletonPattern;
 
 import java.io.Serializable;
 
-public class Samosa implements Serializable {
+public class Samosa implements Serializable , Cloneable {
 
     private static Samosa bowl ;
 
@@ -57,6 +57,13 @@ public class Samosa implements Serializable {
         }
 
         return bowl ;
+
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+
+        return super.clone();
 
     }
 
