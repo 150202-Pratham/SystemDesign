@@ -5,7 +5,7 @@ import java.lang.reflect.Constructor;
 
 public class Break {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception , CloneNotSupportedException{
 
         /*
         *  Here We are Trying all the Methods to Break the Singleton Class
@@ -17,6 +17,8 @@ public class Break {
         *  time;
         *
         *  Method 2:- Using Serialization deserialization to break the Singleton Behaviour
+        *
+        *  Method 3: - Using Clone to make the Clone of the class object
         *
         *
         * */
@@ -44,7 +46,7 @@ public class Break {
         * */
 
 
-        FileOutputStream  fo = new FileOutputStream("SingetonStore.op") ;
+        /*FileOutputStream  fo = new FileOutputStream("SingetonStore.op") ;
         ObjectOutputStream oo = new ObjectOutputStream(fo) ;
 
         oo.writeObject(s1) ;
@@ -53,7 +55,12 @@ public class Break {
 
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("SingetonStore.op") ) ;
         Samosa s2 = (Samosa) ois.readObject() ;
-        System.out.println(s2.hashCode());
+        System.out.println(s2.hashCode());*/
+
+
+        Samosa S2 = (Samosa) s1.clone() ;
+        System.out.println(S2.hashCode());
+
 
 
     }
